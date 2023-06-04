@@ -17,33 +17,27 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
-string_a=mac.split(":")
-#template = "{:b}{:b}{:b}"
-#print (template.format(int(string_a[0]), int(string_a[1]), int(string_a[2])))
-string_a1=list(string_a[0])
-string_a2=list(string_a[1])
-string_a3=list(string_a[2])
-A=10
-B=11
-C=12
-string_a1[0]=A
-string_a1[1]=A
-string_a1[2]=A
-string_a1[3]=A
-string_a2[0]=B
-string_a2[1]=B
-string_a2[2]=B
-string_a2[3]=B
-string_a3[0]=C
-string_a3[1]=C
-string_a3[2]=C
-string_a3[3]=C
+#string_a=mac.split(":")
+#string_a1=list(string_a[0])
+#string_a2=list(string_a[1])
+#string_a3=list(string_a[2])
+#A=10
+#B=11
+#C=12
+#string_a1[0]=A
+#string_a1[1]=A
+#string_a1[2]=A
+#string_a1[3]=A
+#string_a2[0]=B
+#string_a2[1]=B
+#string_a2[2]=B
+#string_a2[3]=B
+#string_a3[0]=C
+#string_a3[1]=C
+#string_a3[2]=C
+#string_a3[3]=C
+#template = "{:b}" * 12
+#print (template.format((string_a1[0]), (string_a1[1]), (string_a1[2]), (string_a1[3]), (string_a2[0]), (string_a2[1]), (string_a2[2]), (string_a2[3]), (string_a3[0]), (string_a3[1]), (string_a3[2]), (string_a3[3]) ))
 
-#print (((string_a1)))
-#print ((int(string_a1[0]), int(string_a1[1]), int(string_a1[2]), int(string_a1[3])))
-#template = "{:0b}{:0b}{:0b}{:0b}" *5
-#print (template.format(int(string_a1[0]), int(string_a1[1]), int(string_a1[2]), int(string_a1[3])))
-
-template = "{:b}" * 12
-print (template.format((string_a1[0]), (string_a1[1]), (string_a1[2]), (string_a1[3]), (string_a2[0]), (string_a2[1]), (string_a2[2]), (string_a2[3]), (string_a3[0]), (string_a3[1]), (string_a3[2]), (string_a3[3]) ))
+print ("{:b}".format(int(mac.replace(":",""), 16)))
 
